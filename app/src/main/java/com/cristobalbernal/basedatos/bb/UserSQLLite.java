@@ -8,7 +8,7 @@ public class UserSQLLite extends SQLiteOpenHelper {
     private static UserSQLLite instance;
     private static final String DB_NAME = "users.db";
     private static final int DB_VERSION = 1;
-    private static final String SQLCREATE = "CREATE TABLE user(INTEGER id PRIMARY KEY,username TEXT NOT NULL,password TEXT NOLL NULL";
+    private static final String SQLCREATE = "CREATE TABLE user(INTEGER id PRIMARY KEY,username TEXT NOT NULL,password TEXT NOT NULL)";
 
     private UserSQLLite(Context context){
         super(context,DB_NAME,null,DB_VERSION);
